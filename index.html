@@ -2,65 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="color-scheme" content="dark" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects</title>
+  <title>m8ngotree</title>
+  <link rel="icon" href="data:," />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --text: #1a1a18;
-      --text-muted: #555551;
-      --text-faint: #8a8a85;
-      --border: rgba(0,0,0,0.10);
-      --bg: #faf9f6;
-      --serif: 'EB Garamond', Georgia, serif;
-    }
-
-    body {
-      font-family: var(--serif);
-      font-size: 18px;
-      line-height: 1.75;
-      color: var(--text);
-      background: var(--bg);
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 60px 28px 100px;
-    }
-
-    .page-title {
-      font-size: 2rem;
-      font-weight: 400;
-      margin-bottom: 48px;
-      padding-bottom: 32px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .projects { display: flex; flex-direction: column; }
-
-    .project {
-      padding: 24px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .project:first-child { border-top: 1px solid var(--border); }
-
-    .project-title {
-      font-size: 1.1rem;
-      font-weight: 500;
-      line-height: 1.35;
-      color: var(--text);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+  <div class="page">
+    <div class="layout">
 
-  <h1 class="page-title">Projects</h1>
+      <nav class="sidebar" aria-label="Main navigation">
+        <div class="sidebar-section">
+          <a class="sidebar-link active" href="/" aria-current="page">Home</a>
+          <a class="sidebar-link" href="/#writing">Writing</a>
+          <a class="sidebar-link" href="/#projects">Projects</a>
+        </div>
+        <div class="sidebar-section sidebar-social">
+          <a href="https://github.com/m8ngotree">GitHub</a>
+          <a href="https://x.com/m8ngotree">Twitter</a>
+        </div>
+      </nav>
 
-  <div class="projects">
+      <main class="content home" id="main-content">
+        <h1 class="name">m8ngotree</h1>
+
+        <h2 class="section-title" id="writing">Writing</h2>
+        <div class="projects">
+          <!-- One .item per post, newest first. -->
+          <div class="item"><a href="/writing/sample-post">Sample Post</a></div>
+        </div>
+
+        <h2 class="section-title" id="projects">Projects</h2>
+        <div class="projects">
+          <!-- <div class="item"><a href="https://github.com/m8ngotree/REPO">Project Name</a></div> -->
+        </div>
+      </main>
+
+    </div>
   </div>
-
 </body>
 </html>
